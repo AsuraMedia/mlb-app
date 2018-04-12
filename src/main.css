@@ -1401,7 +1401,7 @@ section {
 article {
     background: #fff;
     border: 1px solid #aaa;
-    padding: 25px
+    padding: 20px
 }
 
 article:first-child {
@@ -1956,7 +1956,8 @@ div.wpcf7-validation-errors {
     list-style: none;
     margin: 0;
     padding: 0;
-    overflow: hidden
+    overflow: hidden;
+    display: inline-block;
 }
 
 .tabbed-articles {
