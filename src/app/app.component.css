@@ -1,0 +1,41 @@
+.title {
+    font: 700 40px/50px Pilcrow-Bold, sans-serif;
+}
+
+.article-title a {
+    vertical-align: -webkit-baseline-middle;
+}
+
+#avatar {
+    background-image: url('https://image.flaticon.com/icons/svg/166/166366.svg');
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.data-stats {
+    display: inline-block;
+    width: 80%;
+    padding: 0px 0px 0px 20px;
+}
+
+.flex-grid {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+	justify-content: space-between;
+}
+
+.col {
+    width: 47.5%;
+    padding: 10px;
+}
+
+.col-sm {
+    width: 5%;
+    padding: 10px;
+}
