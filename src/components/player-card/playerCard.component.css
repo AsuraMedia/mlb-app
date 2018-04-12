@@ -1,0 +1,28 @@
+.article-title a {
+    vertical-align: -webkit-baseline-middle;
+}
+
+#avatar {
+    background-image: url('https://image.flaticon.com/icons/svg/166/166366.svg');
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: top center;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.data-stats {
+    display: inline-block;
+    width: 80%;
+    padding: 0px 0px 0px 20px;
+}
+
+.player-score {
+    position: relative;
+    float: right;
+    vertical-align: top;
+    top: -60px;
+    font-size: 42px;
+}
