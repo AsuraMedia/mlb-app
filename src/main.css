@@ -1960,13 +1960,19 @@ div.wpcf7-validation-errors {
     display: inline-block;
 }
 
+@media screen and (max-width: 420px) { 
+    .article-tabs { 
+        display: inline-table;
+    }
+}
+
 .tabbed-articles {
     padding: 5px;
 }
 
 .tabbed-articles .article-tabs {
     margin: 0 0 25px;
-    border-bottom: 1px solid #aaa;
+    border-bottom: 0px solid #aaa;
 }
 
 .article-tabs-detail {
@@ -1977,17 +1983,32 @@ div.wpcf7-validation-errors {
 }
 
 li {
-    width: 50px;
+    width: 60px;
+}
+
+@media screen and (max-width: 420px) { 
+    li {
+        width: 40px;
+    }
 }
 
 .tabbed-articles .article-tabs-detail {
-    margin: -15px 0px;
+    margin: -30px 0px;
     border-bottom: 0px solid #aaa;
+    padding-bottom: 10px;
 }
 
 .article-tabs-detail li {
     float: left;
-    margin: 0
+    margin: 0;
+    padding-left: 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 420px) { 
+    .article-tabs-detail li { 
+        padding-top: 29px;
+    }
 }
 
 .article-tabs-detail a {
@@ -2005,7 +2026,14 @@ li {
 
 .article-tabs li {
     float: left;
-    margin: 0
+    margin: 0;
+    padding-left: 5px;
+}
+
+@media screen and (max-width: 420px) { 
+    .article-tabs li {
+        padding-left: 0px;
+    }
 }
 
 .article-tabs a {
@@ -2038,6 +2066,16 @@ li {
     line-height: 30px;
     margin: 0 0 15px;
     overflow: hidden
+}
+
+@media screen and (max-width: 420px) { 
+    .article-list article h2 {
+        font-size: 16px;
+        line-height: 30px;
+        margin: 0 0 15px;
+        overflow: hidden;
+        display: inline-grid;
+    }
 }
 
 .article-list article p {

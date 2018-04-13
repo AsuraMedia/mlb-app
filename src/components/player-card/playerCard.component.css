@@ -15,8 +15,17 @@
 
 .data-stats {
     display: inline-block;
-    width: 80%;
-    padding: 0px 0px 0px 20px;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+}
+
+@media screen and (max-width: 420px) {
+    .data-stats {
+        display: inline-block;
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+        display: flex;
+    }
 }
 
 .player-score {
@@ -25,4 +34,15 @@
     vertical-align: top;
     top: -60px;
     font-size: 42px;
+}
+
+@media screen and (max-width: 420px) {
+    .player-score {
+        position: fixed;
+        float: right;
+        vertical-align: top;
+        top: 90px;
+        font-size: 42px;
+        padding-left: 55px;
+    }
 }
