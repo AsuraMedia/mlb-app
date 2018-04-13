@@ -19,12 +19,12 @@
     padding: 0px 0px 0px 0px;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 565px) {
     .data-stats {
         display: inline-block;
         width: 100%;
         padding: 0px 0px 0px 0px;
-        display: flex;
+        display: inline-flex;
     }
 }
 
@@ -38,11 +38,15 @@
 
 @media screen and (max-width: 420px) {
     .player-score {
-        position: fixed;
         float: right;
         vertical-align: top;
         top: 90px;
         font-size: 42px;
-        padding-left: 55px;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .player-score {
+        top: 1%;
     }
 }

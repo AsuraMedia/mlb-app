@@ -2005,9 +2005,15 @@ li {
     text-align: center;
 }
 
-@media screen and (max-width: 420px) { 
+@media screen and (max-width: 411px) { 
     .article-tabs-detail li { 
         padding-top: 29px;
+    }
+}
+
+@media screen and (min-width: 412px) and (max-width: 565px) { 
+    .article-tabs-detail li { 
+        padding-top: 50px;
     }
 }
 
@@ -2068,7 +2074,7 @@ li {
     overflow: hidden
 }
 
-@media screen and (max-width: 420px) { 
+@media screen and (max-width: 565px) { 
     .article-list article h2 {
         font-size: 16px;
         line-height: 30px;
