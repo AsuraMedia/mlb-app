@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'player-card',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./playerCard.component.css']
 })
 export class PlayerCardComponent {
-  
+  @Input() player: any = {}
+
+  formatFloat (decimal) {
+    return parseFloat(decimal).toFixed(2);
+  }
 }

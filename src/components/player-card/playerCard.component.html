@@ -1,12 +1,14 @@
 <article role="article">
 
     <h2 class="article-title">
-        <div id="avatar"></div>
-        <a href="https://mlb.com">Miguel Cabrera</a>
+        <div id="avatar">
+            <img [src]="player.imgUrl"/>
+        </div>
+        <a href="https://mlb.com">{{player.name}}</a>
     </h2>
 
     <div class="player-score">
-        98
+        89
     </div>
 
     <div class="tabbed-articles">
@@ -19,42 +21,42 @@
                     <img src="../../assets/moveoutpitch.jpg" alt="moveoutpitch" />
                 </li>
                 <li role="tab">
-                    <img src="../../assets/moveinpitch.jpg" alt="moveoutpitch" />
+                    <img src="../../assets/moveinpitch.jpg" alt="moveinpitch" />
                 </li>
                 <li role="tab">
-                    <img src="../../assets/movedownpitch.jpg" alt="moveoutpitch" />
+                    <img src="../../assets/movedownpitch.jpg" alt="movedownpitch" />
                 </li>
                 <li role="tab">
-                    <img src="../../assets/offspeedpitch.jpg" alt="moveoutpitch" />
+                    <img src="../../assets/offspeedpitch.jpg" alt="offspeedpitch" />
                 </li>
                 <li role="tab">
-                    <img src="../../assets/power.jpg" alt="moveoutpitch" />
+                    <img src="../../assets/power.jpg" alt="power" />
                 </li>
                 <li role="tab">
-                    <img src="../../assets/so.png" alt="moveoutpitch" />
+                    <img src="../../assets/so.png" alt="so" />
                 </li>
             </ul>
             <ul class="article-tabs-detail">
                 <li role="tab">
-                    <a href="#katch-our-drift" class="">48</a>
+                    {{formatFloat(player.fast_pitches)}}
                 </li>
                 <li role="tab">
-                    <a href="#news" class="">14</a>
+                    {{player.move_out_pitches}}
                 </li>
                 <li role="tab">
-                    <a href="#press-releases" class="">6</a>
+                    {{player.move_in_pitches}}
                 </li>
                 <li role="tab">
-                    <a href="#katch-up-on-ad-tech" class="">101.5</a>
+                    {{player.move_down_pitches}}
                 </li>
                 <li role="tab">
-                    <a href="#research" class="">44%</a>
+                    {{player.offspeed_pitches}}
                 </li>
                 <li role="tab">
-                    <a href="#research" class="">87</a>
+                    {{player.a}}
                 </li>
                 <li role="tab">
-                    <a href="#research" class="">22</a>
+                    {{player.a}}
                 </li>
             </ul>
         </div>

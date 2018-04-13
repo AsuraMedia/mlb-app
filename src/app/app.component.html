@@ -4,18 +4,15 @@
     <h3 class="widget-title">
       {{title}}
     </h3>
-    <div class="article-list">
-
+    <div class="article-list" *ngFor="let pick of dailyPicks">
       <div class="flex-grid">
         <div class="col">
-            <player-card></player-card>
+            <player-card [player]="pick.batter"></player-card>
         </div>
-
         <div class="col">
-          <player-card></player-card>
+          <player-card [player]="pick.pitcher"></player-card>
         </div>
       </div>
-
     </div>
   </div>
 </div>
