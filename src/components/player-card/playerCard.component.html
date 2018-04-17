@@ -37,26 +37,8 @@
                 </li>
             </ul>
             <ul class="article-tabs-detail">
-                <li role="tab">
-                    {{formatFloat(player.fast_pitches)}}
-                </li>
-                <li role="tab">
-                    {{player.move_out_pitches}}
-                </li>
-                <li role="tab">
-                    {{player.move_in_pitches}}
-                </li>
-                <li role="tab">
-                    {{player.move_down_pitches}}
-                </li>
-                <li role="tab">
-                    {{player.offspeed_pitches}}
-                </li>
-                <li role="tab">
-                    {{player.a}}
-                </li>
-                <li role="tab">
-                    {{player.a}}
+                <li role="tab" *ngFor="let key of player.pitchKeys">
+                    {{key.value}}
                 </li>
             </ul>
         </div>

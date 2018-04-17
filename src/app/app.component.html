@@ -7,10 +7,10 @@
     <div class="article-list" *ngFor="let pick of dailyPicks">
       <div class="flex-grid">
         <div class="col">
-            <player-card [player]="pick.batter"></player-card>
+            <app-player-card [player]="pick.batter"></app-player-card>
         </div>
         <div class="col">
-          <player-card [player]="pick.pitcher"></player-card>
+          <app-player-card [player]="pick.pitcher"></app-player-card>
         </div>
       </div>
     </div>

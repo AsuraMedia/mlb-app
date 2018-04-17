@@ -1,14 +1,14 @@
 import { Component, Input } from '@angular/core';
 
-@Component({
-  selector: 'player-card',
+@Component( {
+  selector: 'app-player-card',
   templateUrl: './playerCard.component.html',
-  styleUrls: ['./playerCard.component.css']
-})
+  styleUrls: [ './playerCard.component.css' ]
+} )
 export class PlayerCardComponent {
-  @Input() player: any = {}
+  @Input() player: any;
+  private pitchKeys: Array<any>;
 
-  formatFloat (decimal) {
-    return parseFloat(decimal).toFixed(2);
+  constructor () {
   }
 }
